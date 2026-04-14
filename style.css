@@ -3,3 +3,65 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    min-height: 100vh;
+    background-color: #fcfffc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    position: relative;
+    padding: 30px;
+    width: 400px;
+    height: 500px;
+    font-family: "Ubuntu", sans-serif;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    background-color: #fcfffc;
+}
+
+#form-title {
+    font-size: 25px;
+    margin: 10px;
+    text-align: center;
+}
+
+label {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+    font-family: "Ubuntu", sans-serif;
+    background-color: #fcfffc;
+    border: 1px solid #595959;
+    border-radius: 5px;
+}
+
+.input-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#submit-form-btn {    
+    width: 100%;
+    background-color: #fea214;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+#submit-form-btn:hover {
+    background-color: #ec9512;
+}

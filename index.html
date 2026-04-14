@@ -5,8 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Validation</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
+    <form action="" id="form">
+        <h3 id="form-title">Registration Form</h3>
+        <div id="username-container" class="input-container">
+            <label for="username-input">Username</label>
+            <input type="text" id="username-input" placeholder="Enter your username">
+        </div>
+        <div id="email-container" class="input-container">
+            <label for="email-input">Email</label>
+            <input type="text" id="email-input" placeholder="Enter your email">
+        </div>
+        <div id="password-container" class="input-container">
+            <label for="password-input">Password</label>
+            <input type="text" id="password-input" placeholder="Enter your password">
+        </div>
+        <div id="confirm-password-container" class="input-container">
+            <label for="confirm-password-input">Confirm Password</label>
+            <input type="text" id="confirm-password-input" placeholder="Confirm password">
+        </div>
+        <button type="submit" id="submit-form-btn">Submit</button>
+    </form>
     
     <script src="script.js"></script>
 </body>
