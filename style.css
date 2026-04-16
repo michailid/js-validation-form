@@ -48,7 +48,7 @@ label {
 
 .input-container input:focus {
     outline: 0;
-    border-color: #ff0000;
+    border-color: #12b8ff;
 }
 
 .input-container {
@@ -61,7 +61,7 @@ label {
 }
 
 .input-container.error input{
-    color: #ff0000;
+    border-color: #ff0000;
 }
 
 .error-label {
