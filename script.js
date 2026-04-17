@@ -20,6 +20,8 @@ form.addEventListener("submit", (e) => {
     } else {
         success(usernameInput);
     }
+    // checking again if empty, because otherwise the confirm pwd
+    // field gets green when pwd and confirm pwd are both empty
     if (confirmPasswordInput.value == "") {
         errorMsg(
             confirmPasswordInput,
