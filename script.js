@@ -4,7 +4,6 @@ const emailInput = document.getElementById("email-input");
 const passwordInput = document.getElementById("password-input");
 const confirmPasswordInput = document.getElementById("confirm-password-input");
 
-
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     checkIfEmpty([usernameInput, emailInput, passwordInput, confirmPasswordInput]);
@@ -16,10 +15,23 @@ form.addEventListener("submit", (e) => {
     if (!checkStringLength(usernameInput.value.trim(), 3, 15)) {
         errorMsg(
             usernameInput,
-            "Username should be between 3 and 15 characters."
+            "Username should be between 3 and 15 characters"
         );
     } else {
         success(usernameInput);
+    }
+    if (confirmPasswordInput.value == "") {
+        errorMsg(
+            confirmPasswordInput,
+            "Confirm password is required"
+        );
+    } else if (passwordInput.value != confirmPasswordInput.value) {
+        errorMsg(
+            confirmPasswordInput,
+            "Passwords should match"
+        );
+    } else {
+        success(confirmPasswordInput);
     }
 });
 
